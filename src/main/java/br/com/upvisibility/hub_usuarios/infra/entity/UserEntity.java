@@ -27,7 +27,7 @@ public class UserEntity {
     @Column(name = "tipo_pessoa")
     private String tipoPessoa;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval = true)
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
     private List<EnderecoEntity> enderecos;
 }
