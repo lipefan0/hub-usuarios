@@ -3,9 +3,9 @@ spring:
     name: hub-usuarios
 
   datasource:
-    url: jdbc:postgresql://localhost:5432/db_usuario
+    url: jdbc:postgresql://5.78.92.146:5432/bling-hub
     username: postgres
-    password: postgres
+    password: ab9n0glou0wh5rrb
 
   jpa:
     show-sql: true
